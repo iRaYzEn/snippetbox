@@ -46,6 +46,7 @@ func main() {
 	// before the main() function exits.
 	defer db.Close()
 
+    // Inititalize a new template cache...
     templateCache, err := newTemplateCache()
     if err != nil {
         errorLog.Fatal(err)
@@ -67,9 +68,6 @@ func main() {
 	}
 
 	infoLog.Printf("Startgin server on %s", *addr)
-	// Because the err variable is now already declared in the code above, we need
-	// to use the assignment operator = here, instead of the := 'declare and assign'
-	// operator.
 	err = srv.ListenAndServe()
 	errorLog.Fatal(err)
 }
