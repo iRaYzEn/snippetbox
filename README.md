@@ -1,4 +1,4 @@
-# A. Edwards - Let’s Go. Learn to build professional web applications with Go
+I am trying to learn backend using this book
 
-i am trying to learn backend using this book and GO
+# A. Edwards - Let’s Go. Learn to build professional web applications with Go
 
